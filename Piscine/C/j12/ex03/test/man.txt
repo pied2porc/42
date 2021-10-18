@@ -1,8 +1,0 @@
-The hexdump utility is a filter which displays the specified files,
-or the standard input, if no files are specified, in a user specified
-format.
--C Canonical hex+ASCII display.
-Display the input offset in hexadecimal, followed by sixteen
-space-separated, two column, hexadecimal bytes, followed by
-the same sixteen bytes in %_p format enclosed in ''|''
-characters.

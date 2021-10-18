@@ -1,4 +1,0 @@
-cat affiche sur la sortie standard le contenu de chacun
-des fichiers indiques (ou le contenu de l'entree strandard
-si aucun nom de fichier n'est fourni, ou si le nom '-' est
-indique).
