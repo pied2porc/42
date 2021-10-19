@@ -1,5 +1,10 @@
 #include "bistromathique.h"
 
+e_tokenType syntaxError() {
+    ft_putstr(SYNTAX_ERR, CERR);
+    return tt_err;
+}
+
 int getPrecedence(int op)
 {
     switch (op) {

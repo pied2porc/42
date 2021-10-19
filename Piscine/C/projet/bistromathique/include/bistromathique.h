@@ -195,11 +195,11 @@ e_tokenType pushNumber     (t_expr* expr, t_node** postfix, e_tokenType lastToke
 e_tokenType pushParenthesis(t_expr* expr, t_node** ops, t_node** postfix, e_tokenType lastTokenType);
 e_tokenType popParenthesis (t_expr* expr, t_node** ops, t_node** postfix, e_tokenType lastTokenType);
 e_tokenType pushOperator   (int op, t_expr* expr, t_node** ops, t_node** postfix, e_tokenType lastTokenType);
-e_tokenType syntaxError    ();
 
 /* parser_utils.c */
-int getPrecedence             (int op);
-int transferRemainingOperators(t_node** ops, t_node** postfix);
+e_tokenType syntaxError               ();
+int         getPrecedence             (int op);
+int         transferRemainingOperators(t_node** ops, t_node** postfix);
 
 /* print.c */
 void printNumberString(t_number* nb, char const* base, char const* ops, int skipLeadingZeros);

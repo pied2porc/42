@@ -112,11 +112,6 @@ e_tokenType pushOperator(int op, t_expr* expr, t_node** ops, t_node** postfix, e
     return tt_operator;
 }
 
-e_tokenType syntaxError() {
-    ft_putstr(SYNTAX_ERR, CERR);
-    return tt_err;
-}
-
 t_node* toPostfix(t_expr* expr)
 {
     t_node* postfix = NULL;
