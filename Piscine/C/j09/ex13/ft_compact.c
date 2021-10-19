@@ -1,1 +1,0 @@
-../../lib/source/ft_compact.c
