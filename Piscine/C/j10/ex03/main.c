@@ -1,0 +1,18 @@
+void ft_putnbr(int);
+int  ft_any(char const**, int(*)(char const*));
+
+int ft_is_num(char const* s)
+{
+    int i = -1;
+    while (s[++i])
+        if (s[i] < '0' || s[i] > '9')
+            return 0;
+    return 1;
+}
+
+int main()
+{
+    char const* tab[] = { "abc", "def", "123a", "42", "test1", "xyz", 0 };
+    ft_putnbr(ft_any(tab, &ft_is_num));
+    return 0;
+}
